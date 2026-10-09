@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Bella Vita – Fine Dining</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+      }
+      header {
+        background: #111;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background 0.3s ease;
+      }
+      nav ul li a:hover {
+        background: #e0a80d;
+        border-radius: 5px;
+      }
+      .hero-menu {
+        width: 100%;
+        height: 60vh;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/023/625/208/non_2x/truly-seamless-tile-of-colorful-knitting-yarn-and-string-background-generative-ai-with-the-option-to-seamlessly-tile-on-all-sides-to-your-desired-size-photo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-text {
+        color: #fff;
+      }
+      .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+      .menu-section {
+        padding: 4rem 5%;
+        background: #fafafa;
+      }
+      .menu-section h2 {
+        font-size: 2rem;
+        color: #111;
+        margin-bottom: 1rem;
+        border-left: 5px solid #e4b95b;
+        padding-left: 0.75rem;
+        font-weight: 700;
+      }
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3.5rem;
+      }
+      .menu-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .menu-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+      .menu-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .menu-info {
+        padding: 1rem 1.2rem;
+      }
+      .menu-info h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .menu-info span {
+        color: #e4b95b;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .menu-info p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+      footer {
+        background: #111;
+        color: #ddd;
+        text-align: center;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Affeena Studio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero hero-menu">
+      <div class="hero-text">
+        <h1></h1>
+        <p>Crafted with passion, served with love.</p>
+      </div>
+    </section>
+    <section class="menu-section">
+      <h2>cardigan</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/originals/1a/3e/c7/1a3ec730186ec6c66195333e797349f2.jpg" alt="cardigan" />
+          <div class="menu-info">
+            <h3></h3><span>₹180</span></h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/originals/26/75/f6/2675f65508daa158e28b10814246013f.jpg" alt="granny square" />
+          <div class="menu-info">
+            <h3>Granny Square & Hexagone Cardigan <span>₹150</span></h3>
+            <p>made with cotton yarn, wool, alpaca & Mohair.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/originals/f5/45/7a/f5457a14609221544fd530c0921361a1.jpg" alt="long cardigan" />
+          <div class="menu-info">
+            <h3>Chunky & Oversized Cardigan <span>₹250</span></h3>
+            <p>chunky yarn, acrylic, polyester.</p>
+          </div>
+        </div>
+      </div>
+      <h2>Bags</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/736x/ab/f4/47/abf447f38f88ca41cf801075ceb87811.jpg" alt="shoulder bags" />
+          <div class="menu-info">
+            <h3>Tote & Shoulder Bags <span>₹350</span></h3>
+            <p>lmacroma yarn, t-shirt yarn, cord yarn.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://mluc9g4uqcah.i.optimole.com/cb:_HII.7a5/w:1920/h:1080/q:75/f:best/https://fixiecraft.com/wp-content/uploads/2025/11/Craft-Web-Design-6.jpg" alt="market bags" />
+          <div class="menu-info">
+            <h3>Market & Gorcery Bags <span>₹420</span></h3>
+            <p>Acrylic yarn, cotton yarn, t-shirt yarn.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://cdn.ballwool.com/products/1080_1440/5fff305f0e9f85a5e472e14bc54c2347.webp" alt="sling bags" />
+          <div class="menu-info">
+            <h3>Crossbody & slings Bags <span>₹300</span></h3>
+            <p>polyster yarn, chunky yarn, cotton yarn.</p>
+          </div>
+        </div>
+      </div>
+      <h2>Hair Accessories</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/originals/97/aa/5a/97aa5aaaf61b3aab2ca0c58bd110f415.jpg" alt="hair bandhan" />
+          <div class="menu-info">
+            <h3>Hair bandans & Kerchiefs<span>₹180</span></h3>
+            <p>cotton yarn, slik yarn, bamboo & linen.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://i.pinimg.com/originals/cd/2e/3c/cd2e3c7bf2edc5037bb164e9bca20f0d.jpg" alt="bows and clips" />
+          <div class="menu-info">
+            <h3>Hair bows & Barrette Clips <span>₹200</span></h3>
+            <p>cotton yarn, slik yarn, bamboo & linen.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="https://i0.wp.com/lovetostayhome.com/wp-content/uploads/2023/01/IMG_9687-1-scaled.jpeg?resize=1457%2C1536&ssl=1" alt="scrunchies" />
+          <div class="menu-info">
+            <h3>Scrunchies & Hair Ties <span>₹120</span></h3>
+            <p>cotton yarn, slik yarn, bamboo & linen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2026 Affeena Studio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

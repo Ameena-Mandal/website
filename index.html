@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Bella Vita – Fine Dining</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+      }
+      header {
+        background: #111;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background 0.3s ease;
+      }
+      nav ul li a:hover {
+        background: #e0a80d;
+        border-radius: 5px;
+      }
+      .hero {
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/051/261/612/small_2x/crochet-hook-in-use-with-yarn-forming-intricate-patterns-photo.jpeg")
+          no-repeat center/cover;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0 1rem;
+      }
+      .hero h2 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      .hero p {
+        max-width: 600px;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+      .section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .section h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #e0a80d;
+      }
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      .menu-item {
+        border: 1px solid #eee;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      .menu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .menu-item img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+      }
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+      }
+      .about img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+      }
+      .about-text {
+        flex: 1;
+      }
+      .contact-info {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2;
+      }
+      footer {
+        background: #111;
+        color: #ddd;
+        text-align: center;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Affeena Studio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Handmade with love, stiched with care</h2>
+      <p>
+        Discover beautiful handmade crochet creations made with patience, creativity and lots of love.
+         From cute accessories to cozy home decor, every piece is crafted to make your everyday moments a little more special. 
+       </p>
+    </section>
+    <section class="section">
+      <h3>most rated products</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://beautifuldawndesigns.net/wp-content/uploads/2021/01/crochet-rainbow-sweater.png" alt="cardigan"
+          />
+          <h4>cardigan</h4>
+          <p>
+            granny square & hexagone cardigan, chunky & over size cardigan, lightweight and summer/lacy cardigan
+            longline and duster cadigan
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            src=https://www.cosyrosieuk.co.uk/wp-content/uploads/2025/07/20-free-crochet-bag-patterns-2025.jpg""
+            alt="Bags"
+          />
+          <h4>bags </h4>
+          <p>
+            Tote & shoulder bags, market & gorcery bags, crossbody &sling bags, Drawstring backpacks & bucket bags
+          </p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://www.christinebritton.com/wp-content/uploads/2025/10/crochet_hair_accessory_patterns_fv21g.jpg"
+            alt="hair accccessories"
+          />
+          <h4>hair accccessories</h4>
+          <p>
+            Hair bandans & Kerchiefs, Hair boes & barrette clips, Scrunchies & Hair Ties, Decorated claw clips & headbands
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section about">
+      <img
+        src="https://casolia.com/wp-content/uploads/2025/07/image0_crochet-store-ideas_crochet-store-ideas.jpg"
+        alt="shop ambiance"
+      />
+      <div class="about-text">
+        <h3>Our Story</h3>
+        <p>
+          In a small, peaceful town lived a young girl named Anaya who loved creating things with her hands. One rainy afternoon, her grandmother gave her an old crochet hook and a basket filled with colorful balls of yarn.
+
+“Crochet is more than making something beautiful,” Grandma told her. “Every stitch carries a little bit of love.”
+
+At first, Anaya struggled. Her stitches were uneven, and the yarn often tangled. She felt like giving up. But Grandma patiently taught her how to make each loop, one stitch at a time.
+
+Day after day, Anaya practiced. Slowly, her little piece of yarn grew into a beautiful, soft cardigan. She chose warm yellow and cream colors because they reminded her of sunshine.
+
+When winter arrived, Anaya gave the cardigan to her grandmother. Grandma wore it with a big smile and hugged her tightly.
+
+“This is the warmest cardigan I have ever had,” she said.
+
+Anaya smiled. She knew it wasn't just the yarn that made the cardigan special. It was the time, patience, memories, and love woven into every stitch.
+
+From that day on, Anaya continued to crochet—not simply to make beautiful things, but to turn little loops of yarn into memories that would last forever.
+        </p>
+      </div>
+    </section>
+    <section class="section contact-info">
+      <h3>Visit Us</h3>
+      <p>23 Foodie Street, Flavor Town, India</p>
+      <p>Open Daily: 11:00 AM – 11:00 PM</p>
+      <p>Call for Reservations: 9876543210</p>
+    </section>
+    <footer>
+      <p>&copy; 2026 Affeena Studio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
